@@ -1,0 +1,4 @@
+useDynLib(rBeta2009)
+
+export(rbeta)
+export(rdirichlet)
