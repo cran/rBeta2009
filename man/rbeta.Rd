@@ -28,13 +28,13 @@
  \code{rbeta} basically utilizes the following guideline primarily proposed by Hung 
  \emph{et al.} (2009) for generating beta random numbers.
  \itemize{
-  \item{When \eqn{max(}\code{shape1}\eqn{, }\code{shape2}\eqn{) < 1}, }{the B00 algorithm 
-     (Sakasegawa, 1983) is used;}
-  \item{When \code{shape1}\eqn{ < 1 < }\code{shape2} or \code{shape1}\eqn{ > 1 > }\code{shape2}, }
-     {the B01 algorithm (Sakasegawa, 1983) is used;}
-  \item{When \eqn{min(}\code{shape1}\eqn{, }\code{shape1}\eqn{) > 1}, }{the B4PE algorithm
+  \item When \eqn{max(}\code{shape1}\eqn{, }\code{shape2}\eqn{) < 1}, the B00 algorithm 
+     (Sakasegawa, 1983) is used;
+  \item When \code{shape1}\eqn{ < 1 < }\code{shape2} or \code{shape1}\eqn{ > 1 > }\code{shape2}, 
+     the B01 algorithm (Sakasegawa, 1983) is used;
+  \item When \eqn{min(}\code{shape1}\eqn{, }\code{shape1}\eqn{) > 1}, the B4PE algorithm
      (Schmeiser and Babu, 1980) is used if one papameter is close to 1 and the other is large
-     (say \eqn{> 4}); otherwise, the BPRS algorithm (Zechner and Stadlober, 1993) is used.}
+     (say \eqn{> 4}); otherwise, the BPRS algorithm (Zechner and Stadlober, 1993) is used.
  }
 }
 \value{

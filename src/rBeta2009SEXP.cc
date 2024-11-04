@@ -15,7 +15,7 @@ SEXP newrbeta(SEXP N, SEXP shape1, SEXP shape2) {
     PROTECT(shape2 = AS_NUMERIC(shape2));
     int *Npt = INTEGER(N);
     double *alpha1 = REAL(shape1), *alpha2 = REAL(shape2);
-    if (*alpha1 <= 0.0 || *alpha2 <= 0.0) error("Shape parameters should be positive");
+    if (*alpha1 <= 0.0 || *alpha2 <= 0.0) Rf_error("Shape parameters should be positive");
     SEXP out;
     PROTECT(out = NEW_NUMERIC(*Npt));
     double *outpt = REAL(out);
@@ -139,9 +139,9 @@ SEXP rdirichlet(SEXP N, SEXP shape) {
     int NN = *INTEGER(N), KK = LENGTH(shape), *invorder, i, j;
     invorder = new int[KK];
     for (i = 0; i < KK; i++)
-        if (*(REAL(shape) + i) <= 0.0) error("Shape parameters should be all positive");
+        if (*(REAL(shape) + i) <= 0.0) Rf_error("Shape parameters should be all positive");
     SEXP out, betas, vecsum, shape1, shapesum, alpha;
-    PROTECT(out = allocMatrix(REALSXP, NN, KK));
+    PROTECT(out = Rf_allocMatrix(REALSXP, NN, KK));
     PROTECT(betas = NEW_NUMERIC(NN));
     PROTECT(vecsum = NEW_NUMERIC(NN));
     PROTECT(shape1 = NEW_NUMERIC(1));

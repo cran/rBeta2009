@@ -1,9 +1,9 @@
-3a7e57dc5a1d014a0317056cc871ef00 *DESCRIPTION
+a3551e14bbfff33474f4de22f542f362 *DESCRIPTION
 779c4c627f44d3f12f89c805c72d0827 *NAMESPACE
 3558aa385a53d8c1dac2bb2584e7ae23 *R/rbeta.R
 b6210916ef610eac0a30f6b05df8158d *R/rdirichlet.R
-d15363b831fd83953a62e2df5aaa99cf *man/rbeta.Rd
+08a168c9a0095cc9f2ea172e44838244 *man/rbeta.Rd
 cdef72622825fa66c6f7bfea4da0e2e6 *man/rdirichlet.Rd
 0d27ab89cb5f260aa5a09ff02d735c9b *src/betaAlgs.cc
 81c9c2a9eb4594fee7e60a21719afff2 *src/betaAlgs.h
-d7c754c733a74e2bb8f9131e0266dc92 *src/rBeta2009SEXP.cc
+7ee66f21d39a0339f30d2f9f218d111a *src/rBeta2009SEXP.cc
